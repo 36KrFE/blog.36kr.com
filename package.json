@@ -5,9 +5,9 @@
   "author": " <zhangchen@36kr.com>",
   "private": true,
   "scripts": {
-    "client": "node client/build/dev-server.js",
+    "client": "NODE_ENV=development webpack-dev-server --open --config ./client/build/webpack.dev.conf.js",
     "server": "node server/www/development.js",
-    "start": "npm run server & npm run client",
+    "start": "npm run client && npm run server",
     "buildclient": "node client/build/build.js",
     "buildserver": "node server/bin/compile.js",
     "build": "node run buildclient && node run buildserver",
@@ -91,8 +91,8 @@
     "vue-loader": "^12.1.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.3.3",
-    "webpack": "^2.6.1",
-    "webpack-dev-middleware": "^1.10.0",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.5.1",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
   },

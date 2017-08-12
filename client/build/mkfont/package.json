@@ -1,0 +1,14 @@
+{
+  "name": "mkfont",
+  "version": "1.0.0",
+  "description": "Open *demo.html* to see a list of all the glyphs in your font along with their codes/ligatures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^1.0.0"
+  }
+}
