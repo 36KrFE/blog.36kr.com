@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "server",
+    "script": "www/production.js",
+    "cwd": "/Users/zhangchen/Desktop/coderoom/blog.36kr.com/server",
+    "exec_mode": "cluster",
+    "instances": 0,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}
